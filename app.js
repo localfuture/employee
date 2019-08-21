@@ -81,6 +81,32 @@ app.post("/find",(req,res)=>{
     })
 })
 
+app.get("/deleteEmp",(req,res)=>{
+    res.render("deleteemp");
+});
+
+app.get("/delete/:name",(req,res)=>{
+    var z = req.params.name;
+    employeeform.deleteOne({name:z},(error)=>{
+        if(error){
+            console.log(error);
+        }else{
+            console.log("Sucessfully Deleted");
+        }
+    });
+});
+
+
+const del = "http://localhost:3000/delete/";
+
+app.post("/delete",(req,res)=>{
+    var y = req.body.name;
+    request(del+y,(error,response,body)=>{
+
+    });
+});
+
+
 app.listen(process.env.PORT || 3000, ()=>{
     console.log("server is up and listening!");
 });

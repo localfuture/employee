@@ -24,36 +24,23 @@
                   <a class="nav-link" href="/view">View Employee</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/searchEmployee">Search employee</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/deleteEmp">Delete Employee</a>
-                  </li>
+                        <a class="nav-link" href="/searchEmployee">Search employee</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/deleteEmp">Delete Employee</a>
+                      </li>
               </ul>
             </div>
           </nav>
     <!-- form -->
     <div class="container px-5 py-5 mx-5 my-5">
-            <form action="/" method="POST">
+            <form action="/delete" method="POST">
                 <div class="form-group row">
                   <label class="col-sm-2 col-form-label">Name</label>
                   <div class="col-md-4">
                     <input type="text" class="form-control" name="name">
                   </div>
                 </div>
-                <div class="form-group row">
-                    <label class="col-sm-2 col-form-label">Designation</label>
-                    <div class="col-md-4">
-                        <input type="text" class="form-control" name="desi">
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label class="col-sm-2 col-form-label">Salary</label>
-                    <div class="col-md-4">
-                        <input type="text" class="form-control" name='salary'>
-                    </div>
-                  </div>
-                 
                   <button type="reset" class="btn btn-warning btn-lg">Reset</button>
                   <button type="submit" class="btn btn-primary btn-lg">Submit</button>
             </form>
